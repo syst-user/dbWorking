@@ -3,6 +3,7 @@ package com.example.dbWorking.controller;
 import com.example.dbWorking.entitie.User;
 import com.example.dbWorking.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -12,6 +13,7 @@ import java.util.List;
 public class UserController {
 
     @Autowired
+    @Qualifier("userServiceNewImpl")
     UserService userService;
 
     @GetMapping("{id}")
