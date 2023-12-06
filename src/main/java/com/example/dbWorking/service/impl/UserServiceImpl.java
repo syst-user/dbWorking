@@ -46,7 +46,7 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public User createUser(User user) {
-        String query = "insert into users(id, firstName, lastName, email) values (:id, :firstName, :lastName, :email)";
+        String query = "insert into users(firstName, lastName, email) values (:firstName, :lastName, :email)";
         namedParameterJdbcTemplate.update(query, getAllSqlParameters(user));
         return user;
     }
