@@ -1,7 +1,7 @@
-package com.example.dbWorking.service.impl;
+package com.example.dbWorking.v1.service.impl;
 
-import com.example.dbWorking.entitie.User;
-import com.example.dbWorking.service.UserService;
+import com.example.dbWorking.v1.entitie.User;
+import com.example.dbWorking.v1.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.namedparam.MapSqlParameterSource;
 import org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate;

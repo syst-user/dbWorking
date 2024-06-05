@@ -1,8 +1,8 @@
-package com.example.dbWorking.service.impl;
+package com.example.dbWorking.v1.service.impl;
 
-import com.example.dbWorking.entitie.User;
-import com.example.dbWorking.mapper.UserMapper;
-import com.example.dbWorking.service.UserService;
+import com.example.dbWorking.v1.entitie.User;
+import com.example.dbWorking.v1.mapper.UserMapper;
+import com.example.dbWorking.v1.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.PropertySource;

@@ -1,6 +1,8 @@
-package com.example.dbWorking.service;
+package com.example.dbWorking.v1.service;
 
-import com.example.dbWorking.entitie.User;
+
+
+import com.example.dbWorking.v1.entitie.User;
 
 import java.util.List;
 

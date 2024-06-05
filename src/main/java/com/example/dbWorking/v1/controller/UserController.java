@@ -1,7 +1,7 @@
-package com.example.dbWorking.controller;
+package com.example.dbWorking.v1.controller;
 
-import com.example.dbWorking.entitie.User;
-import com.example.dbWorking.service.UserService;
+import com.example.dbWorking.v1.entitie.User;
+import com.example.dbWorking.v1.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.web.bind.annotation.*;
@@ -9,11 +9,12 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("user")
+@RequestMapping("v1/user")
 public class UserController {
 
     @Autowired
-    @Qualifier("userServiceNewImpl")
+    //@Qualifier("userServiceNewImpl")
+    @Qualifier("userServiceImpl")
     UserService userService;
 
     @GetMapping("{id}")

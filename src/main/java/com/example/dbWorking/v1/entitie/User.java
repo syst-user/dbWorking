@@ -1,4 +1,4 @@
-package com.example.dbWorking.entitie;
+package com.example.dbWorking.v1.entitie;
 
 public class User {
 

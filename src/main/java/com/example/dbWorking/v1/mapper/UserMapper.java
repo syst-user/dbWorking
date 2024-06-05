@@ -1,6 +1,6 @@
-package com.example.dbWorking.mapper;
+package com.example.dbWorking.v1.mapper;
 
-import com.example.dbWorking.entitie.User;
+import com.example.dbWorking.v1.entitie.User;
 import org.springframework.jdbc.core.RowMapper;
 
 import java.sql.ResultSet;
