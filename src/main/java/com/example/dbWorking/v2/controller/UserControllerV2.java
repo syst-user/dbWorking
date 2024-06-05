@@ -78,4 +78,18 @@ public class UserControllerV2 {
         List<User> result = userService.findByFirstName2(filter);
         return result;
     }
+
+    @GetMapping("/findAllByFirstNameAndLastName")
+    public List<User> findAllByFirstNameAndLastName(@RequestParam("firstName") String firstName,
+                                       @RequestParam("lastName") String lastName) {
+        List<User> result = userService.findAllByFirstNameAndLastName(firstName, lastName);
+        return result;
+    }
+
+    @GetMapping("/findAllByFirstNameAndLastName2")
+    public List<User> findAllByFirstNameAndLastName2(@RequestParam("firstName") String firstName,
+                                       @RequestParam("lastName") String lastName) {
+        List<User> result = userService.findAllByFirstNameAndLastName2(firstName, lastName);
+        return result;
+    }
 }

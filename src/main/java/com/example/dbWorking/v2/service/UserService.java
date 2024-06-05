@@ -27,4 +27,8 @@ public interface UserService {
     List<User> findByFirstName(String filter);
 
     List<User> findByFirstName2(String filter);
+
+    List<User> findAllByFirstNameAndLastName(String firstName, String lastName);
+
+    List<User> findAllByFirstNameAndLastName2(String firstName, String lastName);
 }

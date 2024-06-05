@@ -68,4 +68,14 @@ public class UserServiceJpaImpl implements UserService {
     public List<User> findByFirstName2(String filter) {
         return userRepository.findByFirstName2(filter);
     }
+
+    @Override
+    public List<User> findAllByFirstNameAndLastName(String firstName, String lastName) {
+        return userRepository.findAllByFirstNameAndLastName(firstName, lastName);
+    }
+
+    @Override
+    public List<User> findAllByFirstNameAndLastName2(String firstName, String lastName) {
+        return userRepository.findAllByFirstNameAndLastName2(firstName, lastName);
+    }
 }
